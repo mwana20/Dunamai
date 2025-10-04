@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunamai Church - Welcome Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-church"></i>
+                    <span>Dunamai Church</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#sermons">Sermons</a></li>
+                    <li><a href="#ministries">Ministries</a></li>
+                    <li><a href="#give">Give</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Dunamai Church (Power Within)</h1>
+            <p class="hero-subtitle">1 Corinthians 4:20:For the kingdom of God is not in word, but in power</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Join Us Sunday</button>
+                <button class="btn btn-secondary">Watch Live</button>
+            </div>
+        </div>
+        
+        <!-- Date, Time & Weather Widget -->
+        <div class="info-widget">
+            <div class="widget-item">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                    <span class="widget-label">Date</span>
+                    <span class="widget-value" id="current-date"></span>
+                </div>
+            </div>
+            <div class="widget-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <span class="widget-label">Time</span>
+                    <span class="widget-value" id="current-time"></span>
+                </div>
+            </div>
+            <div class="widget-item">
+                <i class="fas fa-cloud-sun"></i>
+                <div>
+                    <span class="widget-label">Weather</span>
+                    <span class="widget-value" id="weather"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header" style="text-align: left;">
+                        <h2>About Dunamai Church</h2>
+                        <p>Our Story, Vision & Mission</p>
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Dunamai Church was founded in 2018 with a vision to To Equip Men for a Holistic Life. What started as a small gathering of 7 believers has grown into a vibrant community of thousands, united in faith and purpose.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>To Have men rooted In the word - a place where the broken find healing, the lost discover purpose, and believers are equipped to impact their world for Christ.</p>
+                        
+                        <h3>Our Mission</h3>
+                        <p>We exist to glorify God by making disciples who love Jesus, love people, and transform communities through the power of the Gospel.</p>
+                        
+                        <h3>Core Values</h3>
+                        <ul class="values-list">
+                            <li><i class="fas fa-check-circle"></i> <strong>Biblical Truth:</strong> We believe in the authority and sufficiency of Scripture</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Authentic Community:</strong> We foster genuine relationships and fellowship</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Passionate Worship:</strong> We worship God with all our hearts</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Sacrificial Service:</strong> We serve others as Christ served us</li>
+                            <li><i class="fas fa-check-circle"></i> <strong>Global Impact:</strong> We reach beyond our walls to impact the world</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>100+</h3>
+                        <p>Active Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>3+</h3>
+                        <p>Ministries</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-globe-africa"></i>
+                        <h3>9</h3>
+                        <p>Mission Partners</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>7</h3>
+                        <p>Years Serving</p>
+                    </div>
+                    
+                    <div class="leadership">
+                        <h3>Our Leadership</h3>
+                        <div class="leader-card">
+                            <div class="leader-avatar">PM</div>
+                            <div class="leader-info">
+                                <h4>Pastor Wanyama Steven </h4>
+                                <p>Senior Pastor</p>
+                            </div>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar">SN</div>
+                            <div class="leader-info">
+                                <h4>Pastor Marther Wanyama</h4>
+                                <p>Associate Pastor</p>
+                            </div>
+                        </div>
+                        <div class="leader-card">
+                            <div class="leader-avatar">DK</div>
+                            <div class="leader-info">
+                                <h4>Elders' Mr and Mrs Akena </h4>
+                                <p>Board Chairman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Times -->
+    <section class="service-times">
+        <div class="container">
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Sunday Service</h3>
+                    <p>8:00 AM - 9:30 AM <br>9:30 AM - 11:00 AM  <br>11:00 AM - 1:00 PM </p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-moon"></i>
+                    <h3>Wednesday Prayer and Fasting Meeting</h3>
+                    <p>7:00 PM</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Youth Ministry</h3>
+                    <p>Sunday 6:00 PM</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Bible Study</h3>
+                    <p>Tuesday 5:30 PM - 7:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events" id="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <p>Join us for these exciting gatherings</p>
+            </div>
+            <div class="events-grid" id="events-container">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Spotlight -->
+    <section class="spotlight">
+        <div class="container">
+            <div class="section-header">
+                <h2>Membership Spotlight</h2>
+                <p>Celebrating our amazing community members</p>
+            </div>
+            <div class="spotlight-grid" id="spotlight-container">
+                <!-- Spotlight members will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Sermons -->
+    <section class="sermons" id="sermons">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Sermons</h2>
+                <p>Watch and listen to our recent messages</p>
+            </div>
+            <div class="sermons-grid" id="sermons-container">
+                <!-- Sermons will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministries -->
+    <section class="ministries" id="ministries">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Ministries</h2>
+                <p>Find your place to serve and grow</p>
+            </div>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <i class="fas fa-child"></i>
+                    <h3>Children's Ministry</h3>
+                    <p>Nurturing young hearts in faith to Abide thereby.</p>
+                </div>
+                <div class="ministry-card">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>Outreach</h3>
+                    <p>Serving our community with love</p>
+                </div>
+                <div class="ministry-card">
+                    <i class="fas fa-music"></i>
+                    <h3>Worship Team</h3>
+                    <p>Leading praise and worship</p>
+                </div>
+                <div class="ministry-card">
+                    <i class="fas fa-praying-hands"></i>
+                    <h3>Prayer Ministry</h3>
+                    <p>Interceding for our members</p>
+                </div>
+                <div class="ministry-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Youth Ministry</h3>
+                    <p>Empowering the next generation</p>
+                </div>
+                <div class="ministry-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Young Adults</h3>
+                    <p>Building community and purpose</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Give Section -->
+    <section class="give" id="give">
+        <div class="container">
+            <div class="give-content">
+                <h2>Support Our Mission</h2>
+                <p>Your generosity helps us spread hope and transform lives</p>
+                <div class="give-methods">
+                    <div class="give-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Online Giving</h3>
+                        <p>Give securely online</p>
+                        <button class="btn btn-primary">Give Now</button>
+                    </div>
+                    <div class="give-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Giving</h3>
+                        <p>Text to give: (+256) 705750506</p>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                    <div class="give-card">
+                        <i class="fas fa-church"></i>
+                        <h3>In-Person</h3>
+                        <p>Give during service</p>
+                        <button class="btn btn-secondary">Service Times</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>We'd love to hear from you and answer any questions you may have.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Kayunga Rd Opp. Former Fizzy Soda, Mukono, Uganda</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+256 705750506</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@dunamaichurchk.org</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dunamai Church</h3>
+                    <p>A community of faith, hope, and love, dedicated to transforming lives through the power of God's word.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#sermons">Sermons</a></li>
+                        <li><a href="#give">Give</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li><a href="#ministries">Children</a></li>
+                        <li><a href="#ministries">Youth</a></li>
+                        <li><a href="#ministries">Young Adults</a></li>
+                        <li><a href="#ministries">Outreach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to receive updates and news</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dunamai Church . All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
