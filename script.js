@@ -167,25 +167,25 @@ displayEvents();
 // Membership Spotlight Data
 const spotlightMembers = [
     {
-        name: 'Sarah Nakato',
+        name: 'Patience Akena',
         role: 'Worship Leader',
         avatar: 'SN',
         testimony: 'Serving in worship has transformed my life. God has used this ministry to deepen my faith and help others encounter His presence.'
     },
     {
-        name: 'David Okello',
-        role: 'Youth Pastor',
+        name: 'Mbabazi Jane',
+        role: 'Youth Leader',
         avatar: 'DO',
         testimony: 'Watching young people discover their purpose in Christ is the greatest joy. Every week brings new testimonies of transformation.'
     },
     {
-        name: 'Grace Nambi',
+        name: 'Nalukenge Raheal & Nanteza Kevin',
         role: 'Children\'s Ministry Director',
         avatar: 'GN',
         testimony: 'There\'s nothing more rewarding than seeing children fall in love with Jesus. Their faith inspires me every single day.'
     },
     {
-        name: 'Emmanuel Kizza',
+        name: 'Mrs.Akena Janifer',
         role: 'Outreach Coordinator',
         avatar: 'EK',
         testimony: 'Serving the community has opened my eyes to God\'s heart for the lost. Every outreach is an adventure in faith.'
