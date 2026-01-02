@@ -91,7 +91,7 @@ const eventsData = [
         time: '9:00 AM - 12:00 PM',
         location: 'Main Sanctuary',
         description: 'Join us for a powerful time of worship, teaching, and fellowship as we gather together.',
-        image: 'images/events/event1.jpg'
+        image: 'images/chior1.jpeg'
     },
     {
         title: 'Youth Conference 2025',
