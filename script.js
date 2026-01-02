@@ -91,7 +91,7 @@ const eventsData = [
         time: '9:00 AM - 12:00 PM',
         location: 'Main Sanctuary',
         description: 'Join us for a powerful time of worship, teaching, and fellowship as we gather together.',
-        image: 'https://images.unsplash.com/photo-1507692049790-de58290a4334?w=800'
+        image: 'images/events/event1.jpg'
     },
     {
         title: 'Youth Conference 2025',
@@ -99,7 +99,7 @@ const eventsData = [
         time: 'All Day Event',
         location: 'Church Campus',
         description: 'Three days of transformative experiences for our young people with powerful speakers and worship.',
-        image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800'
+        image: 'images/events/event2.jpg'
     },
     {
         title: 'Community Outreach',
@@ -107,7 +107,7 @@ const eventsData = [
         time: '10:00 AM - 4:00 PM',
         location: 'Downtown Kampala',
         description: 'Join us as we serve our community with food distribution, prayer, and sharing God\'s love.',
-        image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800'
+        image: 'images/events/event3.jpg'
     },
     {
         title: 'Marriage Enrichment Seminar',
@@ -115,7 +115,7 @@ const eventsData = [
         time: '6:00 PM - 9:00 PM',
         location: 'Fellowship Hall',
         description: 'Strengthen your marriage with practical wisdom and biblical principles. Dinner included.',
-        image: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800'
+        image: 'images/events/event4.jpg'
     },
     {
         title: 'Prayer & Fasting Week',
@@ -123,7 +123,7 @@ const eventsData = [
         time: 'Daily Sessions',
         location: 'Church Campus',
         description: 'A dedicated week of prayer and fasting as we seek God\'s face together as a community.',
-        image: 'https://images.unsplash.com/photo-1484069560501-87d72b0c3669?w=800'
+        image: 'images/events/event5.jpg'
     },
     {
         title: 'Christmas Concert',
@@ -131,7 +131,7 @@ const eventsData = [
         time: '7:00 PM',
         location: 'Main Sanctuary',
         description: 'Celebrate the season with beautiful music, carols, and a special message of hope.',
-        image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800'
+        image: 'images/events/event6.jpg'
     }
 ];
 
@@ -302,7 +302,7 @@ const getDirectionsBtn = document.getElementById('getDirections');
 if (getDirectionsBtn) {
     getDirectionsBtn.addEventListener('click', () => {
         // Church address (update with actual coordinates)
-        const churchAddress = '123 Faith Street, Kampala, Uganda';
+        const churchAddress = 'Kayunga Rd Opp. Former Fizzy Soda, Mukono, Uganda';
         const encodedAddress = encodeURIComponent(churchAddress);
         
         // Open Google Maps with directions
@@ -385,7 +385,7 @@ document.querySelectorAll('.btn').forEach(button => {
 
 // Initialize everything on page load
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Grace Cathedral Website Loaded Successfully!');
+    console.log('Dunamai Church Website Loaded Successfully!');
     
     // Add entrance animation to hero
     const heroContent = document.querySelector('.hero-content');
