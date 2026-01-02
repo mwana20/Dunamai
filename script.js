@@ -44,44 +44,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Date and Time Widget
-function updateDateTime() {
-    const now = new Date();
-    
-    // Update Date
-    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    const dateString = now.toLocaleDateString('en-US', dateOptions);
-    document.getElementById('current-date').textContent = dateString;
-    
-    // Update Time
-    const timeString = now.toLocaleTimeString('en-US', { 
-        hour: '2-digit', 
-        minute: '2-digit',
-        second: '2-digit'
-    });
-    document.getElementById('current-time').textContent = timeString;
-}
 
-// Update every second
-setInterval(updateDateTime, 1000);
-updateDateTime();
-
-// Weather Widget (Simulated - In production, use a real weather API)
-function updateWeather() {
-    // Simulated weather data for Kampala
-    const weatherConditions = [
-        { temp: '26°C', condition: 'Sunny', icon: '☀️' },
-        { temp: '24°C', condition: 'Partly Cloudy', icon: '⛅' },
-        { temp: '23°C', condition: 'Cloudy', icon: '☁️' },
-        { temp: '22°C', condition: 'Rainy', icon: '🌧️' }
-    ];
-    
-    // Randomly select weather (in production, fetch from API)
-    const weather = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
-    document.getElementById('weather').textContent = `${weather.temp} ${weather.icon}`;
-}
-
-updateWeather();
 
 // Events Data
 const eventsData = [
